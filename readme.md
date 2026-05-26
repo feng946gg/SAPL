@@ -1,6 +1,4 @@
-<div align='center'>
-
-  # Source-Free Domain Adaptation for LiDAR Point Cloud Semantic Segmentation via Spatially Aware Prototype Learning&nbsp;&nbsp;&nbsp;
+# Source-Free Domain Adaptation for LiDAR Point Cloud Semantic Segmentation via Spatially Aware Prototype Learning&nbsp;&nbsp;&nbsp;
 
 The official implementation of our work "Source-Free Domain Adaptation for LiDAR Point Cloud Semantic Segmentation via Spatially Aware Prototype Learning".
 
