@@ -28,7 +28,7 @@ We use the same source model as [TTYD](https://github.com/valeoai/TTYD), which c
 
 ## Trainging
 
-``python sapl.py --name="sapl_synth_poss"  --bn_layer="scaling_per_channel" --resume_path=source_models/synth_semantic_TorchSparseMinkUNet --setting='Synth2POSS' --learning_rate=0.0025  --tensorboard_folder='SAPL'``
+``python SAPL.py --name="sapl_synth_poss"  --bn_layer="scaling_per_channel" --resume_path=source_models/synth_semantic_TorchSparseMinkUNet --setting='Synth2POSS' --learning_rate=0.0025  --tensorboard_folder='SAPL'``
 
 We explain it for SynLiDAR to SemanticPOSS. For other combinations, please change the --setting command (NS2SK, Synth2SK, Synth2POSS, NS2POSS, NS2PD, NS2WY). 
 
