@@ -13,7 +13,7 @@ Source-Free Domain Adaptation (SFDA) offers a practical solution for deploying L
 
 This code was implemented and tested with python 3.10, PyTorch 1.13.1 and CUDA 11.7.
 The MinkUnet backbone is implemented with version 1.4.0 of [Torchsparse](https://github.com/mit-han-lab/torchsparse.)([Exact commit](https://github.com/mit-han-lab/torchsparse/commit/69c1034ddb285798619380537802ea0ff03aeba6)).
-The complete environment and dependencies can be found in the environment.yml file.
+The complete environment and dependencies can be found in the [environment.yml](https://github.com/feng946gg/SAPL/edit/master/environment.yml).
 
 ##  Datasets 
 The datasets should be placed in data/
