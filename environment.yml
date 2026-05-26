@@ -1,4 +1,4 @@
-name: lyf_sapl
+name: sapl_env
 channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/linux-64/
@@ -282,4 +282,4 @@ dependencies:
       - wrapt==1.17.3
       - yarl==1.20.0
       - zipp==3.22.0
-prefix: /home/support/miniconda3/envs/lyf_sapl
+prefix: /home/support/miniconda3/envs/sapl_env
