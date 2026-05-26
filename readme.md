@@ -131,6 +131,6 @@ We explain it for SynLiDAR to SemanticPOSS. For other combinations, please chang
 
 # Acknowledgments
 
-We thanks the open source projects, [TTYD](https://github.com/valeoai/TTYD) and [Torchsparse](https://github.com/mit-han-lab/torchsparse.). 
+We thanks the open source projects, [DT-ST](https://github.com/DZhaoXd/DT-ST), [TTYD](https://github.com/valeoai/TTYD) and [Torchsparse](https://github.com/mit-han-lab/torchsparse.). 
 
 ---
