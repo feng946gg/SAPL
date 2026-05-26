@@ -16,7 +16,90 @@ The MinkUnet backbone is implemented with version 1.4.0 of [Torchsparse](https:/
 The complete environment and dependencies can be found in the [environment.yml](https://github.com/feng946gg/SAPL/edit/master/environment.yml).
 
 ##  Datasets 
-The datasets should be placed in data/
+The datasets should be placed in data/ 
+### SemanticPOSS
+Download SemanticPOSS dataset from [here](http://poss.pku.edu.cn/semanticposs.html), then prepare data folders as follows:
+```
+./
+├── 
+├── ...
+└── data/SemanticPOSS
+    └──sequences/
+        ├── 00/           
+        │   ├── velodyne/	
+        |   |	├── 000000.bin
+        |   |	├── 000001.bin
+        |   |	└── ...
+        │   └── labels/ 
+        |       ├── 000000.label
+        |       ├── 000001.label
+        |       └── ...
+        └── 01/
+```
+
+### SemanticKITTI
+To download SemanticKITTI follow the instructions [here](http://www.semantic-kitti.org). Then, prepare the paths as follows:
+```
+./
+├── 
+├── ...
+└── data/SemanticKITTI/
+      └──dataset
+          ├── sequences
+                ├── 00/           
+                │   ├── velodyne/	
+                |   |	   ├── 000000.bin
+                |   |	   ├── 000001.bin
+                |   |	   └── ...
+                │   ├── labels/ 
+                |   |      ├── 000000.label
+                |   |      ├── 000001.label
+                |   |      └── ...
+                |   ├── calib.txt
+                |   ├── poses.txt
+                |   └── times.txt
+                └── 08/
+```
+### PandaSet
+To download PandaSet follow the instructions [here](https://www.kaggle.com/datasets/usharengaraju/pandaset-dataset/data). Then, prepare the paths as follows:
+```
+./
+├── 
+├── ...
+└── data/pandaset/
+      ├──001/
+          ├── lidar/
+          │    ├── 00.pkl
+          │    ├── 01.pkl
+          │    ├── ...
+          ├── annotations/
+          │    ├── semseg
+          │    │    ├── 00.pkl
+          │    │    ├── 01.pkl
+          │    │    ├── ...
+      ├──002/
+      ├── ...
+                
+```
+
+### Waymo
+Follow the instructions [here](https://waymo.com/open/) to download the data and paths will be already like that:
+```
+./
+├── 
+├── ...
+└── data/waymo_open_v_2_0_0/
+      └──training/
+          └── lidar/
+          └── lidar_segmentation/
+          └── lidar_calibration/
+          └── lidar_pose/
+      └──validation/
+          └── lidar/
+          └── lidar_segmentation/
+          └── lidar_calibration/
+          └── lidar_pose/
+```
 
 ## Source-models
 We use the same source model as [TTYD](https://github.com/valeoai/TTYD), which can be downloaded from the following link. Thank them for their excellent work!
