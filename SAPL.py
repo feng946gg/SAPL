@@ -793,7 +793,7 @@ if __name__ == "__main__":
     parser.add_argument('--ema_update_iteration', type=int, default=6)
     parser.add_argument('--fixed_update_iteration', type=bool, default=False)
     parser.add_argument('--ent_loss_thr', '-eth', type=float, default=0.02)
-    parser.add_argument('--vgi_voxel_size', type=float, default=1.0, help="Voxel size for VGI calculation.")
+    parser.add_argument('--vgi_voxel_size', type=float, default=0.5, help="Voxel size for VGI calculation.")
 
  
     parser.add_argument('--gsp_sigma', type=float, default=10.0, help="Gaussian kernel bandwidth (sigma) in AEI")
