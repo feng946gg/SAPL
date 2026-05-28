@@ -101,6 +101,10 @@ Follow the instructions [here](https://waymo.com/open/) to download the data and
           └── lidar_pose/
 ```
 Note: If you want to use the Waymo Open dataset, you need to run the [preprocess_waymo.py](https://github.com/feng946gg/SAPL/edit/master/preprocess_waymo.py)
+```
+cd datasets
+python preprocess_waymo.py
+```
 ## Source-models
 We use the same source model as [TTYD](https://github.com/valeoai/TTYD), which can be downloaded from the following link. Thank them for their excellent work!
 
