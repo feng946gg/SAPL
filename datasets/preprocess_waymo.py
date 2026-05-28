@@ -17,9 +17,9 @@ from waymo_open_dataset.v2.perception.utils.lidar_utils import (
 
 def preprocess_sequence(sequence_idx, sequence_file, split):
     points_df = dd.read_parquet(sequence_file)
-    labels_df = dd.read_parquet(f"/datasets_master/waymo_open_v_2_0_0/{split}/lidar_segmentation/{sequence_file.split('/')[-1][:-8]}.parquet")
-    calibration_df = dd.read_parquet(f"/datasets_master/waymo_open_v_2_0_0/{split}/lidar_calibration/{sequence_file.split('/')[-1][:-8]}.parquet")
-    pose_df = dd.read_parquet(f"/datasets_master/waymo_open_v_2_0_0/{split}/lidar_pose/{sequence_file.split('/')[-1][:-8]}.parquet")
+    labels_df = dd.read_parquet(f"/data/waymo_open_v_2_0_0/{split}/lidar_segmentation/{sequence_file.split('/')[-1][:-8]}.parquet")
+    calibration_df = dd.read_parquet(f"/data/waymo_open_v_2_0_0/{split}/lidar_calibration/{sequence_file.split('/')[-1][:-8]}.parquet")
+    pose_df = dd.read_parquet(f"/data/waymo_open_v_2_0_0/{split}/lidar_pose/{sequence_file.split('/')[-1][:-8]}.parquet")
     df = v2.merge(points_df, labels_df)
     df = v2.merge(df, calibration_df)
     df = v2.merge(df, pose_df)
@@ -74,7 +74,7 @@ def preprocess_sequence(sequence_idx, sequence_file, split):
 
 if __name__ == "__main__":
     for split in ["training", "validation"]:
-        list_files = glob.glob(f"/datasets_master/waymo_open_v_2_0_0/{split}/lidar/*.parquet")
+        list_files = glob.glob(f"/data/waymo_open_v_2_0_0/{split}/lidar/*.parquet")
         list_files = sorted(list_files)
         print(list_files)
         for i in range(len(list_files)):
