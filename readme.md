@@ -1,11 +1,11 @@
-# Source-Free Domain Adaptation for LiDAR Point Cloud Semantic Segmentation via Spatially Aware Prototype Learning&nbsp;&nbsp;&nbsp;
+# SAPL
 
-The code of our work "Source-Free Domain Adaptation for LiDAR Point Cloud Semantic Segmentation via Spatially Aware Prototype Learning".
+The code of SAPL.
 
 
 # Introduction 
 
-Source-Free Domain Adaptation (SFDA) offers a practical solution for deploying LiDAR point cloud segmentation models in new environments where source data cannot be accessed due to privacy constraints and storage limitations. Existing SFDA methods, however, are primarily designed for images and fail to account for the spatial–statistical structure of LiDAR data. In particular, they overlook global spatial heterogeneity and local spatial auto-correlation, resulting in unreliable pseudo-labels and unstable adaptation. To overcome these limitations, we propose Spatially Aware Prototype Learning (SAPL), a framework that embeds global and local spatial priors into a teacher–student pipeline for robust LiDAR adaptation. SAPL transforms conventional static, globally defined prototype learning into a dynamic, spatially aware process. It first employs an Adaptive Expert Inference (AEI) module to construct a scene-specific mixture-of-experts system based on the Bayesian Information Criterion, effectively mitigating global heterogeneity. A Local Spatial Consensus (LSC) mechanism, equipped with a novel Voxel Gini Impurity (VGI) metric, then quantifies neighborhood consistency and protects prototype calculation from spatial noise. Finally, a Geometric Calibration Module (GCM) fuses predictions from the parametric teacher and non-parametric prototypes to produce reliable, geometry-aligned pseudo-labels resistant to source-domain bias. Extensive experiments on multiple large-scale benchmarks demonstrate that SAPL establishes new state-of-the-art results, underscoring the importance of spatial–statistical modeling for SFDA in LiDAR point cloud segmentation.
+
 
 ---
 
